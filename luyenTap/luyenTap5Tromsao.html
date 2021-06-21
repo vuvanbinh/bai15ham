@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let ngoisao=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
-        let tromsao=["Ursa Minor", "Tarurus", "Cygnus"," Lyra", "Aquila", "Ursa Major","Leo"];
+        let ngoisao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let tromsao = ["Ursa Minor", "Tarurus", "Cygnus", " Lyra", "Aquila", "Ursa Major", "Leo"];
 
-        function demo(a){
+        function demo(a) {
             var index = -1;
-            for(let i =0;i<ngoisao.length;i++){
-                if(a==ngoisao[i]){
-                    index=i;
+            for (let i = 0; i < ngoisao.length; i++) {
+                if (a == ngoisao[i]) {
+                    index = i;
                     break;
                 }
             }
-            if(index==-1){
+            if (index == -1) {
                 alert('khong co');
-            }else{
-                alert('thuoc trom sao '+tromsao[index]);
+            } else {
+                alert('thuoc trom sao ' + tromsao[index]);
             }
         }
-        let b=prompt('nhap ngoi sao');
+        let b = prompt('nhap ngoi sao');
         demo(b);
-        
+
     </script>
 </body>
+
 </html>
